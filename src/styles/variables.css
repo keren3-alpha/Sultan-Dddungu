@@ -1,0 +1,8 @@
+/* styles/variables.css */
+:root {
+  --bg: #0f0915;
+  --bg-alt: #17101f;
+  --text: #f4f0f8;
+  --accent: #c9a464; /* warm gold, evokes tradition without being garish */
+  --radius: 12px;
+}
