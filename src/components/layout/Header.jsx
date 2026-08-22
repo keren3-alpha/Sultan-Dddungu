@@ -1,5 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
+
+function navClass({ isActive }) {
+  return isActive ? "nav-active" : "";
+}
 
 export default function Header() {
   return (
@@ -9,12 +13,12 @@ export default function Header() {
         <span className="logo-text">Sultan Ddungu/Mama</span>
       </Link>
       <nav className="main-nav">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/testimonials">Testimonials</Link>
-        <Link to="/faq">FAQ</Link>
-        <Link to="/contact">Contact</Link>
+        <NavLink to="/" end className={navClass}>Home</NavLink>
+        <NavLink to="/about" className={navClass}>About</NavLink>
+        <NavLink to="/services" className={navClass}>Services</NavLink>
+        <NavLink to="/testimonials" className={navClass}>Testimonials</NavLink>
+        <NavLink to="/faq" className={navClass}>FAQ</NavLink>
+        <NavLink to="/contact" className={navClass}>Contact</NavLink>
       </nav>
       <div className="header-actions">
         <Link to="/contact" className="btn-primary">
