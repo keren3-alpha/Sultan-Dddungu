@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section
@@ -14,13 +16,13 @@ export default function Hero() {
         </p>
         <h1>Clarity, comfort, and confidential guidance.</h1>
         <p className="hero-lead">
-          Sultan Ddungu offers life coaching, relationship guidance, cultural
-          wisdom sessions, and personal consultations for clients around the
-          world.
+          Sultan Ddungu/Mama offers life coaching, relationship guidance,
+          cultural wisdom sessions, and personal consultations for clients
+          around the world.
         </p>
         <div className="cta-row">
-          <a href="/contact" className="btn-primary">Book a Confidential Consultation</a>
-          <a href="/services" className="btn-secondary">Explore Services</a>
+          <Link to="/contact" className="btn-primary">Book a Confidential Consultation</Link>
+          <Link to="/services" className="btn-secondary">Explore Services</Link>
         </div>
       </div>
     </section>

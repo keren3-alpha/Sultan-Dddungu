@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PageHero from "../components/shared/PageHero";
 
 export default function Testimonials() {
@@ -17,7 +18,7 @@ export default function Testimonials() {
           or reach out directly if you would like to hear from past clients
           before booking.
         </p>
-        <a href="/contact" className="btn-primary">Ask us directly</a>
+        <Link to="/contact" className="btn-primary">Ask us directly</Link>
       </section>
     </main>
   );

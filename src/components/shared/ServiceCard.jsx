@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ServiceCard({ title, blurb, price, slug, image }) {
   return (
     <div className="service-card">
@@ -5,7 +7,7 @@ export default function ServiceCard({ title, blurb, price, slug, image }) {
       <h3>{title}</h3>
       {price && <p className="service-price">{price}</p>}
       <p>{blurb}</p>
-      <a href={"/services#" + slug}>View service &rarr;</a>
+      <Link to="/services">View service &rarr;</Link>
     </div>
   );
 }
