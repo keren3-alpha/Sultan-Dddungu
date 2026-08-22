@@ -3,7 +3,7 @@ export default function Intro() {
     <section className="intro">
       <h2>Guidance grounded in listening, dignity, and tradition</h2>
       <p>
-        Mama Ddungu offers confidential guidance rooted in family tradition
+        Sultan Ddungu offers confidential guidance rooted in family tradition
         passed down through generations. Sessions focus on relationships,
         family matters, personal challenges, and important life decisions.
       </p>

@@ -1,7 +1,7 @@
 export default function WhatsAppButton() {
   const phone = "26778521673";
   const message =
-    "Hello Psychic Ddungu, I would like to ask about a confidential spiritual consultation.";
+    "Hello Sultan Ddungu/Mama, I would like to ask about a confidential spiritual consultation.";
 
   return (
     <a

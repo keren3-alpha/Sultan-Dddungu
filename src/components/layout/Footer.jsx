@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-brand">
-        <h3>Psychic Ddungu / Mama</h3>
+        <h3>Sultan Ddungu/Mama</h3>
         <p>Guidance, reflection, and cultural wisdom for life's decisions.</p>
       </div>
 
@@ -29,7 +29,7 @@ export default function Footer() {
       </p>
 
       <p className="copyright">
-        &copy; {new Date().getFullYear()} Psychic Ddungu / Mama. All rights reserved.
+        &copy; {new Date().getFullYear()} Sultan Ddungu/Mama. All rights reserved.
       </p>
     </footer>
   );

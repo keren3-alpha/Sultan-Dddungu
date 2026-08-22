@@ -5,14 +5,14 @@ export default function About() {
     <main>
       <PageHero
         eyebrow="Our story"
-        title="About Mama Ddungu"
+        title="About Sultan Ddungu"
         lead="Guidance rooted in listening, tradition, and honest conversation."
         seed="about-page"
       />
 
       <section className="about-body">
         <p>
-          Mama Ddungu offers confidential guidance for people navigating
+          Sultan Ddungu offers confidential guidance for people navigating
           relationships, family matters, career decisions, and important
           life transitions. The approach draws on cultural tradition and
           lived experience, combined with a genuine commitment to listening

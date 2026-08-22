@@ -11,6 +11,12 @@ const items = [
   "Life Transitions",
   "Family Matters",
   "Reflective Coaching",
+  "Private Sessions",
+  "Cultural Heritage",
+  "Emotional Support",
+  "Clarity & Direction",
+  "Available Worldwide",
+  "Respectful, Judgment-Free Space",
 ];
 
 export default function Marquee() {

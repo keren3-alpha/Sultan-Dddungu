@@ -14,7 +14,7 @@ export default function Hero() {
         </p>
         <h1>Clarity, comfort, and confidential guidance.</h1>
         <p className="hero-lead">
-          Mama Ddungu offers life coaching, relationship guidance, cultural
+          Sultan Ddungu offers life coaching, relationship guidance, cultural
           wisdom sessions, and personal consultations for clients around the
           world.
         </p>
