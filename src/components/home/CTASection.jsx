@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 export default function CTASection() {
   return (
     <section className="cta-section">
-      <h2>Tell Sultan Ddungu what you are facing</h2>
+      <h2>Start a private conversation</h2>
       <p>
-        Your enquiry is treated respectfully and confidentially. Session
-        format, timing, and fees are confirmed before any consultation begins.
+        Tell Sultan Ddungu/Mama what you are facing. Your enquiry is treated respectfully 
+        and confidentially. Contact details, consultation format, fees, and timing 
+        are confirmed before any service begins.
       </p>
       <Link to="/contact" className="btn-primary">
         Request a Consultation

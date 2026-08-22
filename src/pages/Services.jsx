@@ -6,11 +6,11 @@ export default function Services() {
     <main>
       <PageHero
         eyebrow="What we offer"
-        title="Our Services"
+        title="All Services"
         lead="Confidential, honest consultations shaped around your situation."
         seed="services-page"
       />
-      <ServicesGrid />
+      <ServicesGrid showAll={true} />
     </main>
   );
 }

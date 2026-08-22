@@ -5,31 +5,28 @@ export default function About() {
     <main>
       <PageHero
         eyebrow="Our story"
-        title="About Sultan Ddungu"
+        title="About Sultan Ddungu/Mama"
         lead="Guidance rooted in listening, tradition, and honest conversation."
         seed="about-page"
       />
 
       <section className="about-body">
         <p>
-          Sultan Ddungu offers confidential guidance for people navigating
-          relationships, family matters, career decisions, and important
-          life transitions. The approach draws on cultural tradition and
-          lived experience, combined with a genuine commitment to listening
-          before offering any perspective.
+          Born in Zanzibar, East Africa, Sultan Ddungu/Mama describes a family spiritual 
+          tradition passed down through generations. His work focuses on confidential 
+          guidance for relationships, family matters, personal challenges, spiritual 
+          wellbeing, and important life decisions.
         </p>
         <p>
-          Every session begins the same way: by understanding your
-          situation, your beliefs, and what you are actually facing. From
-          there, guidance is shaped around you, not delivered as a fixed
-          script or a guaranteed outcome. No promise is ever made that
-          cannot honestly be kept.
+          Every consultation begins with careful listening. Guidance is then tailored 
+          to the client's concerns, beliefs, and circumstances, without unrealistic 
+          promises or guaranteed outcomes.
         </p>
         <p>
-          Clients come from many backgrounds and many parts of the world.
-          What they have in common is a need for a private, respectful space
-          to think through a difficult decision or a difficult season of
-          life, guided by someone who takes the conversation seriously.
+          Clients come from many backgrounds and many parts of the world. What they 
+          have in common is a need for a private, respectful space to think through 
+          a difficult decision or a difficult season of life, guided by someone who 
+          takes the conversation seriously.
         </p>
       </section>
 

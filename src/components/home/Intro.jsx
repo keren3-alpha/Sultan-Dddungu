@@ -1,16 +1,17 @@
 export default function Intro() {
   return (
     <section className="intro">
-      <h2>Guidance grounded in listening, dignity, and tradition</h2>
+      <h2>Spiritual consultation grounded in listening, dignity, and tradition.</h2>
       <p>
-        Sultan Ddungu offers confidential guidance rooted in family tradition
-        passed down through generations. Sessions focus on relationships,
-        family matters, personal challenges, and important life decisions.
+        Born in Zanzibar, East Africa, Sultan Ddungu/Mama describes a family spiritual 
+        tradition passed down through generations. His work focuses on confidential 
+        guidance for relationships, family matters, personal challenges, spiritual 
+        wellbeing, and important life decisions.
       </p>
       <p>
-        Every conversation begins with careful listening. Guidance is then
-        shaped around your situation, beliefs, and circumstances, without
-        unrealistic promises or guaranteed outcomes.
+        Every consultation begins with careful listening. Guidance is then tailored 
+        to the client's concerns, beliefs, and circumstances, without unrealistic 
+        promises or guaranteed outcomes.
       </p>
     </section>
   );

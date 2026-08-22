@@ -1,0 +1,1959 @@
+=== src/App.css ===
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.site-header .logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-h);
+}
+
+.main-nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.main-nav a:hover {
+  color: var(--text-h);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 24px 60px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero .eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
+.cta-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.intro p {
+  color: var(--text-muted);
+}
+
+/* Services grid */
+.services-grid {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-grid .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+  text-align: left;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.service-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background: var(--bg-alt);
+}
+
+.service-card h3 {
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.service-card a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* How it works / steps */
+.how-it-works {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.step-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.step-card p {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+/* Why choose us */
+.why-choose-us {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.why-choose-us ul {
+  display: inline-block;
+  text-align: left;
+  margin-top: 24px;
+}
+
+.why-choose-us li {
+  padding: 8px 0;
+  color: var(--text-muted);
+  position: relative;
+  padding-left: 20px;
+}
+
+.why-choose-us li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* CTA section */
+.cta-section {
+  text-align: center;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 48px 24px;
+  margin-bottom: 40px;
+}
+
+.cta-section p {
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0 auto 24px;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 48px 32px 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.footer-brand h3 {
+  margin-bottom: 8px;
+}
+
+.footer-brand p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links h4 {
+  color: var(--text-h);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  display: block;
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.disclaimer {
+  grid-column: 1 / -1;
+  font-size: 13px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+  margin-top: 8px;
+}
+
+.copyright {
+  grid-column: 1 / -1;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* WhatsApp floating button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25d366;
+  color: #0a0a0a;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: var(--shadow);
+  z-index: 50;
+}
+
+.whatsapp-float:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Service icon placeholder (replaces broken image) */
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.service-price {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* About page */
+.about-hero {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 48px;
+}
+
+.about-hero .eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.about-hero .lead {
+  color: var(--text-muted);
+  font-size: 18px;
+}
+
+.about-body {
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.about-values {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+  text-align: left;
+}
+
+.value-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.value-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* Contact form */
+.contact-hero {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.contact-hero .eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.contact-hero .lead {
+  color: var(--text-muted);
+}
+
+.contact-form {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form label {
+  font-size: 14px;
+  color: var(--text-h);
+  margin-top: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: var(--text-h);
+  font-family: var(--sans);
+  font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.contact-form button {
+  margin-top: 20px;
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+}
+
+.form-error {
+  color: #e08080;
+  font-size: 14px;
+}
+
+.form-success {
+  color: #7fd99f;
+  font-size: 14px;
+}
+
+/* Header phone + actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-phone {
+  color: var(--text);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.header-phone:hover {
+  color: var(--accent);
+}
+
+/* Hero two-column layout */
+.hero {
+  max-width: 1100px;
+  padding: 60px 24px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 48px;
+  text-align: left;
+}
+
+.hero-text .eyebrow {
+  margin-top: 0;
+}
+
+.hero-text .cta-row {
+  justify-content: flex-start;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-text .cta-row {
+    justify-content: center;
+  }
+}
+
+/* Marquee */
+.marquee {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-alt);
+  padding: 16px 0;
+  margin-bottom: 60px;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  font-size: 15px;
+  color: var(--text-h);
+  white-space: nowrap;
+}
+
+.marquee-dot {
+  color: var(--accent);
+  font-size: 12px;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .header-actions {
+    flex-wrap: wrap;
+  }
+}
+
+/* Full-bleed hero with background image */
+.hero-bg {
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 32px;
+  text-align: left;
+}
+
+.hero-content .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.eyebrow-dash {
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  line-height: 1.15;
+  max-width: 800px;
+  margin-bottom: 24px;
+}
+
+.hero-content .hero-lead {
+  font-size: 18px;
+  color: #d8d3de;
+  max-width: 560px;
+  margin-bottom: 32px;
+}
+
+.hero-content .cta-row {
+  justify-content: flex-start;
+}
+
+@media (max-width: 800px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+  .hero-content {
+    text-align: center;
+    padding: 48px 24px;
+  }
+  .hero-content .eyebrow,
+  .hero-content .cta-row {
+    justify-content: center;
+  }
+}
+
+/* Floating call button, sits above WhatsApp button */
+.call-float {
+  position: fixed;
+  bottom: 84px;
+  right: 24px;
+  background: var(--accent);
+  color: #1a1220;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: var(--shadow);
+  z-index: 50;
+}
+
+.call-float:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+  .call-float {
+    bottom: 76px;
+  }
+}
+
+/* Inner page hero (About, Services, Testimonials, FAQ, Contact) */
+.page-hero.hero-bg {
+  min-height: 55vh;
+}
+
+.page-hero .page-hero-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-hero .eyebrow {
+  justify-content: center;
+}
+
+.page-hero h1 {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 44px;
+}
+
+.page-hero .hero-lead {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 800px) {
+  .page-hero.hero-bg {
+    min-height: 45vh;
+  }
+  .page-hero h1 {
+    font-size: 30px;
+  }
+}
+
+/* Logo with image */
+.site-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-h);
+}
+
+@media (max-width: 640px) {
+  .logo-text {
+    font-size: 16px;
+  }
+}
+
+/* Full viewport everywhere */
+.hero-bg:not(.page-hero) {
+  min-height: 100vh;
+}
+
+.page-hero.hero-bg {
+  min-height: 65vh;
+}
+
+@media (max-width: 800px) {
+  .hero-bg:not(.page-hero) {
+    min-height: 90vh;
+  }
+  .page-hero.hero-bg {
+    min-height: 50vh;
+  }
+}
+
+/* FAQ list */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.faq-item h3 {
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+/* Empty state (Testimonials) */
+.empty-state {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.empty-state p {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+/* Bigger, bolder nav */
+.main-nav a {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.site-header .logo-text {
+  font-size: 20px;
+}
+
+/* Bigger marquee text with smoother motion */
+.marquee-item {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.marquee-track {
+  animation: marquee-scroll 45s linear infinite;
+}
+
+/* Button polish: letter-spacing, slightly bigger */
+.btn-primary,
+.btn-secondary {
+  font-size: 16px;
+  padding: 13px 26px;
+  letter-spacing: 0.3px;
+}
+
+/* Bigger headings across the site */
+h1 {
+  letter-spacing: -0.5px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+}
+
+.page-hero h1 {
+  font-size: 48px;
+}
+
+@media (max-width: 800px) {
+  .hero-content h1 {
+    font-size: 42px;
+  }
+  .main-nav a {
+    font-size: 15px;
+  }
+}
+
+/* Bigger, bolder nav */
+.main-nav a {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.site-header .logo-text {
+  font-size: 20px;
+}
+
+/* Bigger marquee text with smoother motion */
+.marquee-item {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.marquee-track {
+  animation: marquee-scroll 45s linear infinite;
+}
+
+/* Button polish: letter-spacing, slightly bigger */
+.btn-primary,
+.btn-secondary {
+  font-size: 16px;
+  padding: 13px 26px;
+  letter-spacing: 0.3px;
+}
+
+/* Bigger headings across the site */
+h1 {
+  letter-spacing: -0.5px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+}
+
+.page-hero h1 {
+  font-size: 48px;
+}
+
+@media (max-width: 800px) {
+  .hero-content h1 {
+    font-size: 42px;
+  }
+  .main-nav a {
+    font-size: 15px;
+  }
+}
+
+/* Footer redesign */
+.site-footer {
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.footer-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.footer-tagline {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  margin-bottom: 0;
+}
+
+.footer-col a {
+  display: block;
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 10px;
+  transition: color 0.15s ease;
+}
+
+.footer-col a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-serving {
+  color: var(--text-muted);
+}
+
+/* Nav active state */
+.main-nav a.nav-active {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* FAQ Accordion */
+.faq-accordion-list {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-accordion-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.faq-accordion-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--text-h);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 18px 22px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-accordion-icon {
+  color: var(--accent);
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.faq-accordion-body {
+  padding: 0 22px 20px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Private enquiry card */
+.private-enquiry-card {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-alt));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 56px 32px;
+}
+
+.private-enquiry-card .eyebrow {
+  justify-content: center;
+}
+
+.private-enquiry-card p {
+  color: var(--text-muted);
+  max-width: 480px;
+  margin: 0 auto 24px;
+}
+
+/* Contact page split layout */
+.contact-split {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-info > p {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.contact-info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+
+.contact-info-card h4 {
+  color: var(--accent);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.contact-info-card a {
+  font-size: 17px;
+  color: var(--text-h);
+}
+
+.whatsapp-link {
+  color: #25d366 !important;
+}
+
+.contact-info-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 6px 0 0;
+}
+
+.contact-form {
+  max-width: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.contact-form-note {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .contact-split {
+    grid-template-columns: 1fr;
+  }
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Bigger content pass 2 */
+body {
+  font-size: 18px;
+}
+
+.hero-content .hero-lead {
+  font-size: 20px;
+  max-width: 620px;
+}
+
+.intro p,
+.service-card p,
+.step-card p,
+.why-choose-us li,
+.about-body p,
+.faq-item p {
+  font-size: 17px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.service-price {
+  font-size: 15px;
+}
+
+.footer-brand p,
+.footer-links a {
+  font-size: 15px;
+}
+=== src/App.jsx ===
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import WhatsAppButton from "./components/layout/WhatsAppButton";
+import CallButton from "./components/layout/CallButton";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Testimonials from "./pages/Testimonials";
+import FAQ from "./pages/FAQ";
+import Contact from "./pages/Contact";
+import "./App.css";
+
+export default function App() {
+  return (
+    <HashRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+      <CallButton />
+      <WhatsAppButton />
+    </HashRouter>
+  );
+}
+=== src/components/home/CTASection.jsx ===
+import { Link } from "react-router-dom";
+
+export default function CTASection() {
+  return (
+    <section className="cta-section">
+      <h2>Tell Sultan Ddungu what you are facing</h2>
+      <p>
+        Your enquiry is treated respectfully and confidentially. Session
+        format, timing, and fees are confirmed before any consultation begins.
+      </p>
+      <Link to="/contact" className="btn-primary">
+        Request a Consultation
+      </Link>
+    </section>
+  );
+}
+=== src/components/home/Hero.jsx ===
+import { Link } from "react-router-dom";
+
+export default function Hero() {
+  return (
+    <section
+      className="hero hero-bg"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(15,9,21,0.75), rgba(15,9,21,0.85)), url(https://picsum.photos/seed/mama-ddungu-hero/1600/900)",
+      }}
+    >
+      <div className="hero-content">
+        <p className="eyebrow">
+          <span className="eyebrow-dash"></span>
+          Tradition, guidance, and honest conversation
+        </p>
+        <h1>Clarity, comfort, and confidential guidance.</h1>
+        <p className="hero-lead">
+          Sultan Ddungu/Mama offers life coaching, relationship guidance,
+          cultural wisdom sessions, and personal consultations for clients
+          around the world.
+        </p>
+        <div className="cta-row">
+          <Link to="/contact" className="btn-primary">Book a Confidential Consultation</Link>
+          <Link to="/services" className="btn-secondary">Explore Services</Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+=== src/components/home/HowItWorks.jsx ===
+export default function HowItWorks() {
+  const steps = [
+    {
+      title: "Share your concern",
+      text: "Send a short, private message explaining what you would like to discuss.",
+    },
+    {
+      title: "Choose a suitable session",
+      text: "Confirm the service, format, timing, and fee before the session begins.",
+    },
+    {
+      title: "Receive personal guidance",
+      text: "Speak openly in a respectful setting and receive guidance shaped around your situation.",
+    },
+  ];
+
+  return (
+    <section className="how-it-works">
+      <h2>A simple, private consultation process</h2>
+      <div className="steps">
+        {steps.map((step, i) => (
+          <div key={i} className="step-card">
+            <span className="step-number">{i + 1}</span>
+            <h3>{step.title}</h3>
+            <p>{step.text}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+=== src/components/home/Intro.jsx ===
+export default function Intro() {
+  return (
+    <section className="intro">
+      <h2>Guidance grounded in listening, dignity, and tradition</h2>
+      <p>
+        Sultan Ddungu offers confidential guidance rooted in family tradition
+        passed down through generations. Sessions focus on relationships,
+        family matters, personal challenges, and important life decisions.
+      </p>
+      <p>
+        Every conversation begins with careful listening. Guidance is then
+        shaped around your situation, beliefs, and circumstances, without
+        unrealistic promises or guaranteed outcomes.
+      </p>
+    </section>
+  );
+}
+=== src/components/home/ServicesGrid.jsx ===
+// components/home/ServicesGrid.jsx
+import { services } from "../../data/services";
+import ServiceCard from "../shared/ServiceCard";
+
+export default function ServicesGrid() {
+  return (
+    <section className="services-grid">
+      <h2>Guidance for what matters most</h2>
+      <div className="grid">
+        {services.map((s) => (
+          <ServiceCard key={s.slug} {...s} />
+        ))}
+      </div>
+    </section>
+  );
+}=== src/components/home/WhyChooseUs.jsx ===
+export default function WhyChooseUs() {
+  const reasons = [
+    "Confidential sessions handled with discretion.",
+    "Personalized guidance instead of a one-size-fits-all approach.",
+    "Traditional wisdom shared with care and cultural respect.",
+    "Honest communication without misleading guarantees.",
+    "Online access for clients around the world.",
+  ];
+
+  return (
+    <section className="why-choose-us">
+      <h2>Professional communication. Personal attention. Respect for every belief.</h2>
+      <ul>
+        {reasons.map((reason, i) => (
+          <li key={i}>{reason}</li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+=== src/components/layout/CallButton.jsx ===
+export default function CallButton() {
+  const phone = "+26778521673";
+
+  return (
+    <a href={"tel:" + phone} className="call-float">
+      Call us now
+    </a>
+  );
+}
+=== src/components/layout/Footer.jsx ===
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
+
+export default function Footer() {
+  return (
+    <footer className="site-footer">
+      <div className="footer-brand">
+        <div className="footer-logo-row">
+          <img src={logo} alt="Sultan Ddungu/Mama" className="footer-logo-img" />
+          <div>
+            <h3>Sultan Ddungu/Mama</h3>
+            <p className="footer-tagline">Confidential Spiritual Guidance</p>
+          </div>
+        </div>
+        <p>
+          Sessions are offered for personal reflection, encouragement, and
+          cultural guidance. They do not replace medical, psychological,
+          legal, or financial advice, and outcomes are not guaranteed.
+        </p>
+      </div>
+
+      <div className="footer-col">
+        <h4>Explore</h4>
+        <Link to="/about">About</Link>
+        <Link to="/services">Services</Link>
+        <Link to="/testimonials">Testimonials</Link>
+      </div>
+
+      <div className="footer-col">
+        <h4>Information</h4>
+        <Link to="/faq">Frequently Asked Questions</Link>
+        <Link to="/contact">Send an enquiry</Link>
+      </div>
+
+      <div className="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@example.com">hello@example.com</a>
+        <a
+          href="https://wa.me/26778521673"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp consultation
+        </a>
+        <a href="tel:+26778521673">+267 78521673</a>
+      </div>
+
+      <p className="copyright">
+        &copy; {new Date().getFullYear()} Sultan Ddungu/Mama. All rights reserved.
+        <span className="footer-serving"> Serving clients worldwide through confidential online consultations.</span>
+      </p>
+    </footer>
+  );
+}
+=== src/components/layout/Header.jsx ===
+import { Link, NavLink } from "react-router-dom";
+import logo from "../../assets/logo.png";
+
+function navClass({ isActive }) {
+  return isActive ? "nav-active" : "";
+}
+
+export default function Header() {
+  return (
+    <header className="site-header">
+      <Link to="/" className="logo">
+        <img src={logo} alt="Sultan Ddungu/Mama" className="logo-img" />
+        <span className="logo-text">Sultan Ddungu/Mama</span>
+      </Link>
+      <nav className="main-nav">
+        <NavLink to="/" end className={navClass}>Home</NavLink>
+        <NavLink to="/about" className={navClass}>About</NavLink>
+        <NavLink to="/services" className={navClass}>Services</NavLink>
+        <NavLink to="/testimonials" className={navClass}>Testimonials</NavLink>
+        <NavLink to="/faq" className={navClass}>FAQ</NavLink>
+        <NavLink to="/contact" className={navClass}>Contact</NavLink>
+      </nav>
+      <div className="header-actions">
+        <Link to="/contact" className="btn-primary">
+          Book a Consultation
+        </Link>
+      </div>
+    </header>
+  );
+}
+=== src/components/layout/WhatsAppButton.jsx ===
+export default function WhatsAppButton() {
+  const phone = "26778521673";
+  const message =
+    "Hello Sultan Ddungu/Mama, I would like to ask about a confidential spiritual consultation.";
+
+  return (
+    <a
+      href={"https://wa.me/" + phone + "?text=" + encodeURIComponent(message)}
+      className="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Chat on WhatsApp
+    </a>
+  );
+}
+=== src/components/shared/Button.jsx ===
+=== src/components/shared/Marquee.jsx ===
+const items = [
+  "Life & Purpose Guidance",
+  "Relationship & Family Coaching",
+  "Cultural & Ancestral Storytelling",
+  "Career & Business Reflection",
+  "Mindful Renewal Sessions",
+  "Confidential Consultations",
+  "Honest, Grounded Guidance",
+  "Traditional Wisdom",
+  "Personal Growth",
+  "Life Transitions",
+  "Family Matters",
+  "Reflective Coaching",
+  "Private Sessions",
+  "Cultural Heritage",
+  "Emotional Support",
+  "Clarity & Direction",
+  "Available Worldwide",
+  "Respectful, Judgment-Free Space",
+];
+
+export default function Marquee() {
+  const track = items.concat(items);
+
+  return (
+    <div className="marquee">
+      <div className="marquee-track">
+        {track.map((item, i) => (
+          <span key={i} className="marquee-item">
+            {item}
+            <span className="marquee-dot">&#10022;</span>
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+=== src/components/shared/PageHero.jsx ===
+export default function PageHero({ eyebrow, title, lead, seed }) {
+  return (
+    <section
+      className="hero hero-bg page-hero"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(15,9,21,0.75), rgba(15,9,21,0.85)), url(https://picsum.photos/seed/" +
+          seed +
+          "/1600/900)",
+      }}
+    >
+      <div className="hero-content page-hero-content">
+        {eyebrow && (
+          <p className="eyebrow">
+            <span className="eyebrow-dash"></span>
+            {eyebrow}
+          </p>
+        )}
+        <h1>{title}</h1>
+        {lead && <p className="hero-lead">{lead}</p>}
+      </div>
+    </section>
+  );
+}
+=== src/components/shared/ServiceCard.jsx ===
+import { Link } from "react-router-dom";
+
+export default function ServiceCard({ title, blurb, price, slug, image }) {
+  return (
+    <div className="service-card">
+      {image && <img src={image} alt={title} loading="lazy" />}
+      <h3>{title}</h3>
+      {price && <p className="service-price">{price}</p>}
+      <p>{blurb}</p>
+      <Link to="/services">View service &rarr;</Link>
+    </div>
+  );
+}
+=== src/components/shared/StepCard.jsx ===
+=== src/data/services.js ===
+import lifeGuidanceImg from "../assets/services/life-guidance.jpg";
+import relationshipCoachingImg from "../assets/services/relationship-coaching.jpg";
+import culturalWisdomImg from "../assets/services/cultural-wisdom.jpg";
+import careerConsultancyImg from "../assets/services/career-consultancy.jpg";
+import mindfulRenewalImg from "../assets/services/mindful-renewal.jpg";
+
+export const services = [
+  {
+    slug: "life-guidance",
+    title: "Life & Purpose Guidance",
+    price: "From $40 / session",
+    blurb: "Reflective sessions to help you think through big decisions, transitions, and personal direction.",
+    image: lifeGuidanceImg,
+  },
+  {
+    slug: "relationship-coaching",
+    title: "Relationship & Family Coaching",
+    price: "From $45 / session",
+    blurb: "Supportive conversation for communication struggles, separation, or reconciliation.",
+    image: relationshipCoachingImg,
+  },
+  {
+    slug: "cultural-wisdom",
+    title: "Cultural & Ancestral Storytelling",
+    price: "From $35 / session",
+    blurb: "Sessions exploring heritage, tradition, and the wisdom passed through generations.",
+    image: culturalWisdomImg,
+  },
+  {
+    slug: "career-consultancy",
+    title: "Career & Business Reflection",
+    price: "From $50 / session",
+    blurb: "Talk through career decisions, confidence, and direction with a grounded outside perspective.",
+    image: careerConsultancyImg,
+  },
+  {
+    slug: "mindful-renewal",
+    title: "Mindful Renewal Sessions",
+    price: "From $35 / session",
+    blurb: "Time set aside for stress relief, emotional check-ins, and a sense of reset.",
+    image: mindfulRenewalImg,
+  },
+];
+=== src/data/testimonials.js ===
+=== src/index.css ===
+:root {
+  --bg: #0f0915;
+  --bg-alt: #17101f;
+  --bg-card: #1c1424;
+  --text: #cfc9d6;
+  --text-h: #f4f0f8;
+  --text-muted: #8d8598;
+  --accent: #c9a464;
+  --accent-soft: rgba(201, 164, 100, 0.12);
+  --border: #2c2233;
+  --radius: 12px;
+  --sans: 'Segoe UI', system-ui, Roboto, sans-serif;
+  --shadow: rgba(0, 0, 0, 0.35) 0 10px 25px -5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-h);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+h1 { font-size: 48px; letter-spacing: -1px; }
+h2 { font-size: 30px; }
+h3 { font-size: 20px; }
+
+p {
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  width: 100%;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #1a1220;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-h);
+  border: 1px solid var(--border);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+  opacity: 0.9;
+}
+=== src/main.jsx ===
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+=== src/pages/About.jsx ===
+import PageHero from "../components/shared/PageHero";
+
+export default function About() {
+  return (
+    <main>
+      <PageHero
+        eyebrow="Our story"
+        title="About Sultan Ddungu"
+        lead="Guidance rooted in listening, tradition, and honest conversation."
+        seed="about-page"
+      />
+
+      <section className="about-body">
+        <p>
+          Sultan Ddungu offers confidential guidance for people navigating
+          relationships, family matters, career decisions, and important
+          life transitions. The approach draws on cultural tradition and
+          lived experience, combined with a genuine commitment to listening
+          before offering any perspective.
+        </p>
+        <p>
+          Every session begins the same way: by understanding your
+          situation, your beliefs, and what you are actually facing. From
+          there, guidance is shaped around you, not delivered as a fixed
+          script or a guaranteed outcome. No promise is ever made that
+          cannot honestly be kept.
+        </p>
+        <p>
+          Clients come from many backgrounds and many parts of the world.
+          What they have in common is a need for a private, respectful space
+          to think through a difficult decision or a difficult season of
+          life, guided by someone who takes the conversation seriously.
+        </p>
+      </section>
+
+      <section className="about-values">
+        <h2>What guides every session</h2>
+        <div className="values-grid">
+          <div className="value-card">
+            <h3>Confidentiality</h3>
+            <p>What you share stays private. Always.</p>
+          </div>
+          <div className="value-card">
+            <h3>Honesty</h3>
+            <p>No guaranteed outcomes, no exaggerated promises.</p>
+          </div>
+          <div className="value-card">
+            <h3>Cultural respect</h3>
+            <p>Tradition shared with care, for people of any background.</p>
+          </div>
+          <div className="value-card">
+            <h3>Personal attention</h3>
+            <p>Every conversation is shaped around your actual situation.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
+=== src/pages/Contact.jsx ===
+import { useState } from "react";
+import PageHero from "../components/shared/PageHero";
+
+export default function Contact() {
+  const [form, setForm] = useState({ name: "", email: "", concern: "" });
+  const [error, setError] = useState("");
+
+  const contactEmail = "hello@example.com";
+  const phone = "26778521673";
+
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  }
+
+  function buildMessage() {
+    return (
+      "Name: " + form.name + "\n" +
+      "Email: " + form.email + "\n\n" +
+      form.concern
+    );
+  }
+
+  function sendByEmail(e) {
+    e.preventDefault();
+    if (!form.name || !form.email || !form.concern) {
+      setError("Please fill in every field before sending.");
+      return;
+    }
+    setError("");
+    const subject = "Consultation enquiry from " + form.name;
+    window.location.href =
+      "mailto:" + contactEmail +
+      "?subject=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(buildMessage());
+  }
+
+  function sendByWhatsApp(e) {
+    e.preventDefault();
+    if (!form.name || !form.email || !form.concern) {
+      setError("Please fill in every field before sending.");
+      return;
+    }
+    setError("");
+    window.open(
+      "https://wa.me/" + phone + "?text=" + encodeURIComponent(buildMessage()),
+      "_blank"
+    );
+  }
+
+  return (
+    <main id="contact-form">
+      <PageHero
+        eyebrow="Private enquiry"
+        title="Contact Us"
+        lead="Your enquiry is treated respectfully and confidentially."
+        seed="contact-page"
+      />
+
+      <div className="contact-split">
+        <div className="contact-info">
+          <p>
+            We welcome clients from around the world through secure online
+            consultations via WhatsApp, phone, or email.
+          </p>
+
+          <div className="contact-info-card">
+            <h4>Email</h4>
+            <a href={"mailto:" + contactEmail}>{contactEmail}</a>
+          </div>
+
+          <div className="contact-info-card">
+            <h4>WhatsApp</h4>
+            <a
+              href={"https://wa.me/" + phone}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-link"
+            >
+              +267 78521673
+            </a>
+            <p className="contact-info-note">Chat privately on WhatsApp.</p>
+          </div>
+
+          <div className="contact-info-card">
+            <h4>Telephone</h4>
+            <a href={"tel:+" + phone}>+267 78521673</a>
+          </div>
+        </div>
+
+        <form className="contact-form">
+          <h2>Consultation Enquiry</h2>
+          <p className="contact-form-note">
+            Choose email or WhatsApp after completing the form.
+          </p>
+
+          <label htmlFor="name">Your name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            value={form.name}
+            onChange={handleChange}
+          />
+
+          <label htmlFor="email">Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value={form.email}
+            onChange={handleChange}
+          />
+
+          <label htmlFor="concern">Briefly describe your concern</label>
+          <textarea
+            id="concern"
+            name="concern"
+            rows="5"
+            value={form.concern}
+            onChange={handleChange}
+          />
+
+          {error && <p className="form-error">{error}</p>}
+
+          <div className="contact-form-buttons">
+            <button onClick={sendByEmail} className="btn-primary">
+              Send by Email
+            </button>
+            <button onClick={sendByWhatsApp} className="btn-secondary">
+              Send by WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  );
+}
+=== src/pages/FAQ.jsx ===
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import PageHero from "../components/shared/PageHero";
+
+const faqs = [
+  {
+    q: "What can I expect from a session?",
+    a: "Every session starts with listening. You explain what you are facing, and guidance is shaped around your actual situation, beliefs, and circumstances.",
+  },
+  {
+    q: "Is everything confidential?",
+    a: "Yes. What you share stays private. Nothing discussed in a session is shared with anyone else.",
+  },
+  {
+    q: "How can I book a consultation?",
+    a: "Use the Contact page, WhatsApp, or call directly. You will confirm the service, format, timing, and fee before the session begins.",
+  },
+  {
+    q: "Do you offer consultations online?",
+    a: "Yes. Sessions are available for clients around the world through WhatsApp, phone, or video call.",
+  },
+  {
+    q: "Are my personal details kept private?",
+    a: "Yes. Your details and the content of your session are never shared with anyone else.",
+  },
+  {
+    q: "How long does a session take, and what does it cost?",
+    a: "Most sessions run between 30 and 60 minutes. Pricing depends on the service and is confirmed with you before booking.",
+  },
+  {
+    q: "What issues can be discussed?",
+    a: "Relationships, family matters, career decisions, life transitions, and personal reflection. If a topic falls outside what we can help with, we will tell you honestly.",
+  },
+  {
+    q: "Do you work with people from different backgrounds?",
+    a: "Yes. Every client is treated with respect regardless of background or belief system.",
+  },
+  {
+    q: "Do you guarantee outcomes?",
+    a: "No. Guidance is honest and grounded, not a promise of a specific result.",
+  },
+];
+
+function FAQItem({ q, a }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="faq-accordion-item">
+      <button
+        className="faq-accordion-trigger"
+        onClick={() => setOpen(!open)}
+      >
+        <span>{q}</span>
+        <span className="faq-accordion-icon">{open ? "-" : "+"}</span>
+      </button>
+      {open && <div className="faq-accordion-body">{a}</div>}
+    </div>
+  );
+}
+
+export default function FAQ() {
+  return (
+    <main>
+      <PageHero
+        eyebrow="Common questions"
+        title="Frequently Asked Questions"
+        lead="Answers to what people usually ask before booking a session."
+        seed="faq-page"
+      />
+
+      <section className="faq-accordion-list">
+        {faqs.map((item, i) => (
+          <FAQItem key={i} q={item.q} a={item.a} />
+        ))}
+      </section>
+
+      <section className="private-enquiry-card">
+        <p className="eyebrow">
+          <span className="eyebrow-dash"></span>
+          Still have a question?
+        </p>
+        <h2>Send a private enquiry.</h2>
+        <p>
+          Describe the service you are considering and ask for the timing,
+          fee, consultation method, and scope before you proceed.
+        </p>
+        <Link to="/contact" className="btn-primary">Ask a Question</Link>
+      </section>
+    </main>
+  );
+}
+=== src/pages/Home.jsx ===
+import Hero from "../components/home/Hero";
+import Marquee from "../components/shared/Marquee";
+import Intro from "../components/home/Intro";
+import ServicesGrid from "../components/home/ServicesGrid";
+import HowItWorks from "../components/home/HowItWorks";
+import WhyChooseUs from "../components/home/WhyChooseUs";
+import CTASection from "../components/home/CTASection";
+
+export default function Home() {
+  return (
+    <main>
+      <Hero />
+      <Marquee />
+      <Intro />
+      <ServicesGrid />
+      <HowItWorks />
+      <WhyChooseUs />
+      <CTASection />
+    </main>
+  );
+}
+=== src/pages/Services.jsx ===
+import PageHero from "../components/shared/PageHero";
+import ServicesGrid from "../components/home/ServicesGrid";
+
+export default function Services() {
+  return (
+    <main>
+      <PageHero
+        eyebrow="What we offer"
+        title="Our Services"
+        lead="Confidential, honest consultations shaped around your situation."
+        seed="services-page"
+      />
+      <ServicesGrid />
+    </main>
+  );
+}
+=== src/pages/Testimonials.jsx ===
+import { Link } from "react-router-dom";
+import PageHero from "../components/shared/PageHero";
+
+export default function Testimonials() {
+  return (
+    <main>
+      <PageHero
+        eyebrow="Client experiences"
+        title="Testimonials"
+        lead="Real feedback from people we have guided."
+        seed="testimonials-page"
+      />
+
+      <section className="empty-state">
+        <h2>Testimonials are on their way</h2>
+        <p>
+          We are collecting feedback from recent clients. Check back soon,
+          or reach out directly if you would like to hear from past clients
+          before booking.
+        </p>
+        <Link to="/contact" className="btn-primary">Ask us directly</Link>
+      </section>
+    </main>
+  );
+}
+=== src/styles/global.css ===
+=== src/styles/variables.css ===
+/* styles/variables.css */
+:root {
+  --bg: #0f0915;
+  --bg-alt: #17101f;
+  --text: #f4f0f8;
+  --accent: #c9a464; /* warm gold, evokes tradition without being garish */
+  --radius: 12px;
+}
