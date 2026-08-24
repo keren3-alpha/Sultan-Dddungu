@@ -413,7 +413,6 @@ p { margin: 0 0 20px; color: var(--muted); }
   .whatsapp-float { right: 14px; bottom: 14px; min-height: 52px; max-width: calc(100vw - 28px); padding: 10px 16px 10px 12px; font-size: .88rem; }
   .whatsapp-float .whatsapp-icon { width: 25px; height: 25px; }
 }
-EOFcat > src/App.css << 'EOF'
 :root {
   --ink: #f9f4ea;
   --muted: #c9bfd2;
