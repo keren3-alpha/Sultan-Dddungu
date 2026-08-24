@@ -5,10 +5,10 @@ export default function Services() {
   return (
     <main>
       <PageHero
-        eyebrow="What we offer"
-        title="All Services"
+        breadcrumb="Services"
+        title="Our Services"
         lead="Confidential, honest consultations shaped around your situation."
-        seed="services-page"
+        seed="services"
       />
       <ServicesGrid showAll={true} />
     </main>

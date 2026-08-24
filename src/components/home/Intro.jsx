@@ -2,6 +2,7 @@ export default function Intro() {
   return (
     <section className="section">
       <div className="narrow center">
+        <div className="eyebrow" style={{ justifyContent: "center" }}>About Sultan Ddungu/Mama</div>
         <h2>Spiritual consultation grounded in listening, dignity, and tradition.</h2>
         <p className="lead">
           Born in Zanzibar, East Africa, Sultan Ddungu/Mama describes a family spiritual 

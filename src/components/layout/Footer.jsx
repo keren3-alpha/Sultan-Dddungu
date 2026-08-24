@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/services/logo.png";
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-              <img src={logo} alt="Sultan Ddungu/Mama" style={{ width: "48px", height: "48px", borderRadius: "50%", border: "1px solid var(--line)" }} />
+              <img src={logo} alt="Sultan Ddungu/Mama" style={{ width: "48px", height: "48px", borderRadius: "50%", border: "1px solid var(--line)", objectFit: "cover" }} />
               <div>
                 <h3 style={{ color: "var(--gold-light)", marginBottom: "4px" }}>Sultan Ddungu/Mama</h3>
                 <p style={{ fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em", color: "var(--muted)" }}>Confidential Spiritual Guidance</p>

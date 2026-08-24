@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/services/logo.png";
 
 function navClass({ isActive }) {
   return isActive ? "nav-active" : "";

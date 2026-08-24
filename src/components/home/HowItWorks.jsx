@@ -15,16 +15,18 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="how-it-works">
-      <h2>A simple, private consultation process</h2>
-      <div className="steps">
-        {steps.map((step, i) => (
-          <div key={i} className="step-card">
-            <span className="step-number">{i + 1}</span>
-            <h3>{step.title}</h3>
-            <p>{step.text}</p>
-          </div>
-        ))}
+    <section className="section">
+      <div className="container center">
+        <div className="eyebrow" style={{ justifyContent: "center" }}>How It Works</div>
+        <h2>A simple, private consultation process</h2>
+        <div className="steps">
+          {steps.map((step, i) => (
+            <div key={i} className="step">
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

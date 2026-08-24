@@ -45,16 +45,17 @@ const items = [
 ];
 
 export default function Marquee() {
-  const track = items.concat(items);
   return (
-    <div className="marquee">
-      <div className="marquee-track">
-        {track.map((item, i) => (
-          <span key={i} className="marquee-item">
-            {item}
-            <span className="marquee-dot">✦</span>
-          </span>
-        ))}
+    <div className="services-marquee">
+      <div className="marquee-shell">
+        <div className="marquee-track">
+          {items.concat(items).map((item, i) => (
+            <div key={i} className="marquee-group">
+              <span className="marquee-item">{item}</span>
+              <span className="marquee-separator">✦</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import tarotReadingImg from "../../assets/services/Tarotreading.jpg";
+
 export default function WhyChooseUs() {
   const reasons = [
     "Confidential consultations handled with discretion.",
@@ -8,16 +11,33 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="why-choose-us">
-      <h2>Why people choose Sultan Ddungu/Mama</h2>
-      <p style={{ color: "var(--text-muted)", marginBottom: "24px", fontSize: "20px" }}>
-        Professional communication. Personal attention. Respect for every belief.
-      </p>
-      <ul>
-        {reasons.map((reason, i) => (
-          <li key={i}>{reason}</li>
-        ))}
-      </ul>
+    <section className="section">
+      <div className="container">
+        <div className="grid-2">
+          <div>
+            <div className="eyebrow">Why choose us</div>
+            <h2>Why people choose Sultan Ddungu/Mama</h2>
+            <p className="lead" style={{ marginBottom: "24px" }}>
+              Professional communication. Personal attention. Respect for every belief.
+            </p>
+            <ul className="feature-list">
+              {reasons.map((reason, i) => (
+                <li key={i}>{reason}</li>
+              ))}
+            </ul>
+            <div className="button-row">
+              <Link to="/contact" className="btn btn-primary">Start a Conversation</Link>
+            </div>
+          </div>
+          <div className="image-frame portrait">
+            <img 
+              src={tarotReadingImg}
+              alt="Tarot Reading - Spiritual Guidance"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

@@ -33,26 +33,28 @@ export default function HeroCarousel() {
           />
         ))}
       </div>
-      <div className="hero-inner container">
-        <div className="hero-copy">
-          <div className="eyebrow">TRADITIONAL WISDOM, MODERN ACCESS</div>
-          <h1>Clarity, comfort, and<br /><span>confidential spiritual</span><br />guidance.</h1>
-          <p className="lead">
+      <div className="hero-inner container" style={{ textAlign: "center" }}>
+        <div className="hero-copy" style={{ margin: "0 auto", maxWidth: "900px" }}>
+          <div className="eyebrow" style={{ justifyContent: "center" }}>TRADITIONAL WISDOM, MODERN ACCESS</div>
+          <h1 style={{ fontSize: "clamp(3.5rem, 9vw, 7rem)" }}>
+            Clarity, comfort, and<br /><span>confidential spiritual</span><br />guidance.
+          </h1>
+          <p className="lead" style={{ fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)", maxWidth: "800px", margin: "0 auto 32px" }}>
             Sultan Ddungu/Mama offers palm reading, relationship guidance, prayer support, 
             spiritual cleansing, and personal consultations for clients around the world.
           </p>
-          <div className="button-row">
-            <Link to="/contact" className="btn btn-primary">
+          <div className="button-row" style={{ justifyContent: "center" }}>
+            <Link to="/contact" className="btn btn-primary" style={{ fontSize: "1.2rem", padding: "16px 40px" }}>
               Book a Confidential Consultation
             </Link>
-            <Link to="/services" className="btn btn-secondary">
+            <Link to="/services" className="btn btn-secondary" style={{ fontSize: "1.2rem", padding: "16px 40px" }}>
               Explore Services
             </Link>
           </div>
-          <div className="trust-row">
-            <span className="trust-pill">Private and respectful</span>
-            <span className="trust-pill">Personalized guidance</span>
-            <span className="trust-pill">Worldwide online access</span>
+          <div className="trust-row" style={{ justifyContent: "center" }}>
+            <span className="trust-pill" style={{ fontSize: "1rem" }}>Private and respectful</span>
+            <span className="trust-pill" style={{ fontSize: "1rem" }}>Personalized guidance</span>
+            <span className="trust-pill" style={{ fontSize: "1rem" }}>Worldwide online access</span>
           </div>
         </div>
       </div>

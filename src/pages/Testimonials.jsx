@@ -5,20 +5,26 @@ export default function Testimonials() {
   return (
     <main>
       <PageHero
-        eyebrow="Client experiences"
+        breadcrumb="Testimonials"
         title="Testimonials"
         lead="Real feedback from people we have guided."
-        seed="testimonials-page"
+        seed="testimonials"
       />
 
-      <section className="empty-state">
-        <h2>Testimonials are on their way</h2>
-        <p>
-          We are collecting feedback from recent clients. Check back soon,
-          or reach out directly if you would like to hear from past clients
-          before booking.
-        </p>
-        <Link to="/contact" className="btn-primary">Ask us directly</Link>
+      <section className="section">
+        <div className="container center" style={{ maxWidth: "700px" }}>
+          <div className="card" style={{ padding: "60px 40px" }}>
+            <h2 style={{ fontSize: "32px" }}>Testimonials are on their way</h2>
+            <p className="lead">
+              We are collecting feedback from recent clients. Check back soon, 
+              or reach out directly if you would like to hear from past clients 
+              before booking.
+            </p>
+            <div className="button-row" style={{ justifyContent: "center" }}>
+              <Link to="/contact" className="btn btn-primary">Ask us directly</Link>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );

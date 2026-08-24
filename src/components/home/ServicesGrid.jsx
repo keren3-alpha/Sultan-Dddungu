@@ -11,8 +11,9 @@ export default function ServicesGrid({ showAll = false }) {
   return (
     <section className="section">
       <div className="container center">
+        <div className="eyebrow" style={{ justifyContent: "center" }}>Our Services</div>
         <h2>Guidance for the questions that matter most.</h2>
-        <p className="lead" style={{ marginBottom: "32px" }}>
+        <p className="lead" style={{ marginBottom: "32px", maxWidth: "700px", marginInline: "auto" }}>
           Choose a service area or request a private consultation to discuss your situation directly.
         </p>
         
@@ -35,7 +36,7 @@ export default function ServicesGrid({ showAll = false }) {
         </div>
         
         {!showAll && services.length > 6 && (
-          <div style={{ textAlign: "center", marginTop: "32px" }}>
+          <div style={{ textAlign: "center", marginTop: "40px" }}>
             <a href="#/services" className="btn btn-secondary">View All Services →</a>
           </div>
         )}
