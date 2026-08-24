@@ -4,13 +4,13 @@ export default function WhyChooseUs() {
     "Personalized guidance instead of a one-size-fits-all approach.",
     "Traditional spiritual knowledge shared with care and cultural respect.",
     "Honest communication without misleading guarantees.",
-    "Online access for clients in the United Kingdom, United States, Australia, Canada, Africa, and beyond.",
+    "Online access for clients in Namibia, Botswana, South Africa, USA, and beyond.",
   ];
 
   return (
     <section className="why-choose-us">
       <h2>Why people choose Sultan Ddungu/Mama</h2>
-      <p style={{ color: "var(--text-muted)", marginBottom: "24px" }}>
+      <p style={{ color: "var(--text-muted)", marginBottom: "24px", fontSize: "20px" }}>
         Professional communication. Personal attention. Respect for every belief.
       </p>
       <ul>

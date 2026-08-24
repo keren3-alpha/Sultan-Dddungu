@@ -43,42 +43,13 @@ const tags = [
 
 export default function ServiceTags() {
   return (
-    <section style={{
-      padding: "40px 24px",
-      borderTop: "1px solid var(--border)",
-      borderBottom: "1px solid var(--border)",
-      marginBottom: "40px"
-    }}>
-      <div style={{
-        maxWidth: "1100px",
-        margin: "0 auto",
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "12px",
-        justifyContent: "center"
-      }}>
+    <section className="service-tags">
+      <div className="service-tags-container">
         {tags.map((tag, index) => (
           <Link
             key={index}
             to="/services"
-            style={{
-              color: "var(--text-muted)",
-              fontSize: "13px",
-              padding: "6px 16px",
-              border: "1px solid var(--border)",
-              borderRadius: "20px",
-              textDecoration: "none",
-              transition: "all 0.2s ease",
-              backgroundColor: "var(--bg-card)"
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.color = "var(--accent)";
-              e.target.style.borderColor = "var(--accent)";
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.color = "var(--text-muted)";
-              e.target.style.borderColor = "var(--border)";
-            }}
+            className="service-tag"
           >
             {tag}
           </Link>
