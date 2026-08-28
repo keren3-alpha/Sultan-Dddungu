@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import tarotReadingImg from "../../assets/services/Tarotreading.jpg";
+import Sul2 from "../../assets/services/Sul2.jpeg";
 
 export default function WhyChooseUs() {
   const reasons = [
@@ -31,8 +31,8 @@ export default function WhyChooseUs() {
           </div>
           <div className="image-frame portrait">
             <img 
-              src={tarotReadingImg}
-              alt="Tarot Reading - Spiritual Guidance"
+              src={Sul2}
+              alt="Spiritual guidance and tradition"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>

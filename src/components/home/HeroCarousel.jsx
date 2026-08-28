@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import palmReadingImg from "../../assets/services/Psalmreading.jpg";
-import tarotReadingImg from "../../assets/services/Tarotreading.jpg";
-import astrologyReadingImg from "../../assets/services/astrologyreading.jpg";
-import loveBindingImg from "../../assets/services/LoveBindingRituals.jpg";
+import Sul2 from "../../assets/services/Sul2.jpeg";
+import Sul7 from "../../assets/services/Sul7.jpeg";
+import Sul6 from "../../assets/services/Sul6.jpeg";
+import Sul8 from "../../assets/services/Sul8.jpeg";
+import Sul4 from "../../assets/services/Sul4.jpeg";
 
 const heroImages = [
-  { id: 1, image: palmReadingImg },
-  { id: 2, image: tarotReadingImg },
-  { id: 3, image: astrologyReadingImg },
-  { id: 4, image: loveBindingImg }
+  { id: 1, image: Sul2, title: "Spiritual Guidance" },
+  { id: 2, image: Sul7, title: "Mystical Wisdom" },
+  { id: 3, image: Sul6, title: "Divine Connection" },
+  { id: 4, image: Sul8, title: "Sacred Rituals" },
+  { id: 5, image: Sul4, title: "Ancient Power" }
 ];
 
 export default function HeroCarousel() {
@@ -55,6 +57,24 @@ export default function HeroCarousel() {
             <span className="trust-pill" style={{ fontSize: "1rem" }}>Private and respectful</span>
             <span className="trust-pill" style={{ fontSize: "1rem" }}>Personalized guidance</span>
             <span className="trust-pill" style={{ fontSize: "1rem" }}>Worldwide online access</span>
+          </div>
+          <div className="hero-dots" style={{ display: "flex", justifyContent: "center", gap: "14px", marginTop: "40px" }}>
+            {heroImages.map((_, index) => (
+              <button
+                key={index}
+                className={`hero-dot ${index === currentIndex ? 'active' : ''}`}
+                style={{
+                  width: "14px",
+                  height: "14px",
+                  borderRadius: "50%",
+                  border: "none",
+                  background: index === currentIndex ? "#c9a464" : "#2c2233",
+                  cursor: "pointer",
+                  transition: "background 0.3s ease"
+                }}
+                aria-label={`Slide ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
       </div>
